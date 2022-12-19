@@ -136,6 +136,7 @@ print(lst_f_and_l(lst1))
 
 lst4 = [1.1, 1.2, 3.1, 5, 10.01]
 
+
 def difference_max_min(lst):
     min_ = round(lst[0] - int(lst[0]), 2)
     max_ = round(lst[0] - int(lst[0]), 2)
@@ -147,6 +148,7 @@ def difference_max_min(lst):
             if i < min_:
                 min_ = i
     return max_ - min_
+
 
 print(difference_max_min(lst4))
 
@@ -161,15 +163,17 @@ print(difference_max_min(lst4))
 
 num = 45
 
-def change_num(num):
-    lst = []
 
-    while int(num):
-        lst.append(num % 2)
-        num = int(num / 2)
+def change_num(num_):
+    lst_ = []
 
-    for i in lst[::-1]:
+    while int(num_):
+        lst_.append(num_ % 2)
+        num_ = int(num_ / 2)
+
+    for i in lst_[::-1]:
         print(i, end='')
+
 
 change_num(num)
 
